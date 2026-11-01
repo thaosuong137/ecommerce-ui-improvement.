@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Danh sách sản phẩm thời trang nữ RUBIES - giao diện minh họa.">
+  <title>Sản phẩm | RUBIES</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ĐẦU TRANG -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">RUBIES<span>.</span></a>
+
+      <nav class="shop-nav" aria-label="Menu chính">
+        <a href="index.html" aria-current="page">Sản phẩm</a>
+        <a href="cart.html">Giỏ hàng</a>
+      </nav>
+
+      <span class="header-note">BẢN THIẾT KẾ MINH HỌA</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ĐƯỜNG DẪN VÀ TIÊU ĐỀ -->
+    <nav class="breadcrumb" aria-label="Đường dẫn trang">
+      <strong>Sản phẩm</strong>
+    </nav>
+
+    <section class="catalog-heading">
+      <p class="eyebrow">RUBIES COLLECTION</p>
+      <h1>Tất cả sản phẩm</h1>
+      <p class="subtitle">
+        Những thiết kế thanh lịch dành cho phong cách mỗi ngày.
+      </p>
+    </section>
+
+    <!-- TÌM KIẾM, LỌC VÀ SẮP XẾP -->
+    <section class="catalog-toolbar" aria-label="Công cụ tìm sản phẩm">
+
+      <div class="search-box">
+        <label for="product-search">Tìm kiếm sản phẩm</label>
+        <input
+          id="product-search"
+          type="search"
+          placeholder="Nhập tên sản phẩm..."
+        >
+      </div>
+
+      <div class="filter-box">
+        <label for="category-filter">Danh mục</label>
+        <select id="category-filter">
+          <option value="all">Tất cả</option>
+          <option value="dress">Đầm</option>
+          <option value="blouse">Áo</option>
+          <option value="skirt">Chân váy</option>
+          <option value="pants">Quần</option>
+        </select>
+      </div>
+
+      <div class="sort-box">
+        <label for="price-sort">Sắp xếp</label>
+        <select id="price-sort">
+          <option value="default">Mặc định</option>
+          <option value="asc">Giá thấp đến cao</option>
+          <option value="desc">Giá cao đến thấp</option>
+        </select>
+      </div>
+
+    </section>
+
+    <!-- DANH SÁCH SẢN PHẨM -->
+    <section class="catalog-section" aria-labelledby="catalog-title">
+      <div class="catalog-top">
+        <h2 id="catalog-title">Bộ sưu tập RUBIES</h2>
+        <span>4 sản phẩm mẫu</span>
+      </div>
+
+      <div class="catalog-grid" id="product-list">
+
+        <article class="catalog-card" data-category="dress" data-price="590000">
+          <img src="images/dress.svg" alt="Minh họa đầm nữ màu xám">
+          <div class="catalog-info">
+            <p class="product-category">ĐẦM NỮ</p>
+            <h3>Đầm Carti Dress</h3>
+            <p class="catalog-price">590.000đ</p>
+            <button type="button" class="add-cart" disabled>
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+        </article>
+
+        <article class="catalog-card" data-category="blouse" data-price="350000">
+          <img src="images/blouse.svg" alt="Minh họa áo kiểu màu kem">
+          <div class="catalog-info">
+            <p class="product-category">ÁO KIỂU</p>
+            <h3>Áo kiểu Lily Blouse</h3>
+            <p class="catalog-price">350.000đ</p>
+            <button type="button" class="add-cart" disabled>
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+        </article>
+
+        <article class="catalog-card" data-category="skirt" data-price="420000">
+          <img src="images/skirt.svg" alt="Minh họa chân váy màu đen">
+          <div class="catalog-info">
+            <p class="product-category">CHÂN VÁY</p>
+            <h3>Chân váy Muse Skirt</h3>
+            <p class="catalog-price">420.000đ</p>
+            <button type="button" class="add-cart" disabled>
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+        </article>
+
+        <article class="catalog-card" data-category="pants" data-price="490000">
+          <img src="images/pants.svg" alt="Minh họa quần dài màu nâu">
+          <div class="catalog-info">
+            <p class="product-category">QUẦN DÀI</p>
+            <h3>Quần suông Bella Pants</h3>
+            <p class="catalog-price">490.000đ</p>
+            <button type="button" class="add-cart" disabled>
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <p class="catalog-note">
+      Đây là giao diện HTML/CSS minh họa.
+      Chức năng tìm kiếm, lọc, sắp xếp và thêm vào giỏ hàng
+      sẽ được phát triển bằng JavaScript ở Buổi 3.
+    </p>
+
+  </main>
+
+  <!-- CHÂN TRANG -->
+  <footer class="site-footer">
+    <div class="container">
+      Bài tập phát triển giao diện TMĐT ·
+      Mô phỏng website RUBIES · Không phải website chính thức
+    </div>
+  </footer>
+
+</body>
+</html>
